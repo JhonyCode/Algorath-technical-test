@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Relations index{% endblock %}
+
+{% block body %}
+    <h1>Relations index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for relation in relations %}
+            <tr>
+                <td>{{ relation.id }}</td>
+                <td>
+                    <a href="{{ path('app_relations_show', {'id': relation.id}) }}">show</a>
+                    <a href="{{ path('app_relations_edit', {'id': relation.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_relations_new') }}">Create new</a>
+{% endblock %}

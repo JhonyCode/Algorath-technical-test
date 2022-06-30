@@ -1,0 +1,34 @@
+.login {
+  color: black;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+h2 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 5%;
+}
+label{
+  margin-left: 30px;
+}
+input{
+  margin-left: 5px;
+}
+.image{
+  display: flex;
+  justify-content: center;
+}
+.register{ display: flex;
+  justify-content: center;
+  margin-left: 40px;
+}

@@ -25,6 +25,12 @@ composer install
 
 then, you will need modify the .env file to your user and your password from MYSQL.
 
+Import SQL file to your DB, then run 
+
+```
+symfony server:start --port=8080
+````
+
 For install frontend you will need:
 
 ```

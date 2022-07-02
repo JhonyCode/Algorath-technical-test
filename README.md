@@ -36,8 +36,6 @@ For install frontend you will need:
 ```
 npm install
 ```
-After that, you will need import the SQL file to your DB.
-
 then in the backend folder you will need to run : 
 ```
 symfony start:server --port=8080
